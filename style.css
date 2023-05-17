@@ -1,0 +1,201 @@
+:root{
+    --bg :  #FFFFFF;
+    --font-family:'Roboto', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+body{
+    background-color: var(--bg);
+    height: auto;
+}
+@media screen and (min-width:480px) {
+    /*Mobile device */
+       .container-lg{
+        display: flex;
+        flex-direction: column;
+        }
+        .skyscraper-img{
+            width: 100%;
+            height: 600px;
+        }
+        .container-sm{
+            width: auto;
+            margin: 32px;
+
+        }
+        .container-sm .header{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+    
+        }
+        .container-xs{
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 40px;
+        }
+        
+        .card{
+            width: 300px;
+            height: auto;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 43px;
+            margin-top: 46px;
+            /* border: solid 1px lightgray; */
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .card:hover{
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.50); 
+        }
+        .card img{
+            width: 100%;
+        }
+        
+        .card .text{
+            font-size: 32px;
+            line-height: 110%;
+            font-style: normal;
+            font-weight: 400;
+            padding: 20px;
+            /* width: 380px; */
+         
+        }
+        .card-footer{
+            /* width: 380px; */
+            height: 86px;
+            text-decoration: underline;
+            font-variant: small-caps;
+            font-weight: 700;
+            text-align: right; 
+            padding: 20px;
+            
+        }
+
+        .card-footer p{
+            cursor: pointer;
+        }
+
+        .space{
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            top: 1300px;
+            /* background-color: black; */
+        }
+    
+    }
+    
+    @media screen and (min-width:768px) {
+    /* Tablet */
+       /* body { color: firebrick; } */
+
+        .container-xs{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+        }
+    }
+    @media only screen and (min-width: 1002px) {
+        /* Laptop */
+        .container-lg{
+            position: relative;
+            margin-top: 100px;
+            }
+            .container-md{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+            
+            .skyscraper-img{
+                position: absolute;
+                top: 12px;
+                left: 0;
+                height:850px;
+                width: 710px;
+            }
+            .container-sm{
+                position: absolute;
+                top: 12px;
+                left: 750px;
+                width: auto;
+                margin-right: 290px;
+                margin: 0;
+            }
+            
+            .container-xs{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            
+            .card{
+                height: auto;
+
+            }
+            
+            .card .text{
+                line-height: 43px;
+                width: auto;
+                height: auto;
+            }
+            .card-footer{
+                width: auto;
+                height: 145px;
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                
+            }
+    }
+
+    @media screen and (min-width:1600px) {
+        /* Big-Big Screen */
+        .container-lg{
+            margin-top: 0px;
+            }
+            .skyscraper-img{
+                top: 370px;
+                left: 0;
+            }
+            .container-sm{
+                top: 370px;
+                left: 750px;
+            }
+            
+            .container-sm .header{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 56px;
+            }
+            .container-xs{
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 40px;
+            }
+            
+            .card{
+                width: 420px;
+                height: 754px;
+                border-radius: 40px;
+            }
+            
+            .card .text{
+                line-height: 43px;
+                width: 380px;
+                height: auto;
+            }
+            .card-footer{
+                width: 380px;
+                height: 145px;
+            }
+        }
