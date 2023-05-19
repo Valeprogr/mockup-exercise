@@ -49,7 +49,7 @@ body{
             flex-direction: column;
             justify-content: space-between;
             line-height: 43px;
-            margin-top: 46px;
+            margin: 46px;
             /* border: solid 1px lightgray; */
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         }
