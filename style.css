@@ -9,16 +9,16 @@
     box-sizing: border-box;
     font-family: var(--font-family);
 }
+body{
+    background-color: var(--bg);
+    height: 100vh;
+    width: auto;
+}
 
 
-@media screen and (max-width: 450px) {
-    body{
-        background-color: var(--bg);
-        height: 100vh;
+@media screen and (max-width: 500px) {
+    .box{
         display: block;
- 
-        
-       
     }
     .container{
         margin: 0, 12px;
@@ -96,11 +96,10 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    body{
+@media screen and (min-width: 501px) {
+    .box{
         display: flex;
         align-items: center;
-        height: 100vh;
         width: auto;
        
     }
@@ -114,7 +113,7 @@
         "img img car1 car1 car2 car2";
         
         gap: 40px;
-        padding: 10px 40px 0 0;
+        padding: 100px 40px 0 0;
     }
     
     .skyscraper-img{
@@ -175,7 +174,13 @@
     }
 }
 @media only screen and (min-width: 1002px) {
+    .box{
+        height: 100%;
+    }
 
+    .container{
+        padding: 0px;
+    }
     .skyscraper-img{
         width: 710px;
         height: 850px;
